@@ -1,15 +1,3 @@
-<!-- directive replaces other code? -->
-<!-- ui-sref="details" -->
-<!-- ui-sref="details({id: product.id})" -->
-
-<!-- ng-click="getDetails(product.id) -->
-<!-- routes.js, routes folder, details route -->
-<!-- ISOLATE SCOPE -->
-host on GitHub Pages
-
-
-
-
 # Angular assessment
 
 
@@ -25,18 +13,18 @@ host on GitHub Pages
 ``4``
  After you have your routing setup you can start working on getting the data you'll need.
  For the shop.html view you're going to need to make an api call to http://practiceapi.devmounta.in/products to get all the products.
-
+ 
  ``5``
  Product needs to be a directive.  The template is provided for you in product-tmpl.html.
  It needs to have an isolate scope and take in the product and show the details.
  Clicking on the title will navigate to product details.
  Clicking on the image will collapse the image and show a link that says "show image" instead.  Click on "show image" will hide the "show image" link and show the actual image.
  All the styles are completed for you already so you'll just need to display the data in the right spot. LOOK FOR COMMENTS.
-
+ 
  ``6``
  Show all the products on the shop.html page using your product directive.
-
- ``7``
+  
+ ``7`` 
  After your data is displaying correctly you'll need to get the product-details view configured.
  In your routes file add a route called details. This route is going to have an id being passed in. The url will look like this detail/:id.
  Now that the route is setup you can finish the links in the shop.html file.
@@ -59,4 +47,3 @@ Host your solution on github pages.
 Open that url to make sure it works, then send that url to your assigned mentor!
 
 # Congratulations! you have finished the assessment
-# AngularAssessment
