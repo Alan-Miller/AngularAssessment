@@ -4,5 +4,4 @@ angular.module('assessment').controller('detailsController', function($scope, se
     $scope.details = response;
   });
 
-
 });

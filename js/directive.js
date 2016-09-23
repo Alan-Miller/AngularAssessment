@@ -1,12 +1,11 @@
 angular.module('assessment')
-  .directive('directive', function() {
-
-    return {
-      restrict: 'AE',
-      scope: {
-        ware: '=',
-        getWare: '&'
-      },
-      templateUrl: 'views/product-tmpl.html'
-    };
+.directive('directive', function() {
+  return {
+    restrict: 'AE',
+    scope: {
+      ware: '=',
+      getDeets: '&'
+    },
+    templateUrl: 'views/product-tmpl.html'
+  };
 });
