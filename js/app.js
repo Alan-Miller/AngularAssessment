@@ -1,28 +1,31 @@
-angular.module('assessment', ['ui.router']).config(function($stateProvider, $urlRouterProvider) {
+angular.module('assessment', ['ui.router'])
+.config(function($stateProvider, $urlRouterProvider) {
+   $stateProvider
+     .state('home', {
+       url: '/',
+       templateUrl: './views/home.html',
+       controller: 'homeCtrl'
+     })
+     .state('about', {
+       url: '/about',
+       templateUrl: './views/about.html',
+       controller: 'aboutCtrl'
+     })
+     .state('blog', {
+       url: '/blog',
+       templateUrl: './views/blog.html',
+       controller: 'blogCtrl'
+     })
+     .state('bio', {
+       url: '/bio/:id',
+       templateUrl: './views/pet-bio.html',
+       controller: 'petBioCtrl'
+     })
+     .state('pets', {
+       url: '/pets',
+       templateUrl: './views/pets.html',
+       controller: 'petsCtrl'
+     });
 
-  $stateProvider
-  .state('home', {
-    url: '/',
-    controller: 'homeController',
-    templateUrl: 'views/home.html'
-  }).state('about', {
-    url: '/about',
-    controller: 'aboutController',
-    templateUrl: 'views/about.html'
-  }).state('blog', {
-    url: '/blog',
-    controller: 'blogController',
-    templateUrl: 'views/blog.html'
-  }).state('details', {
-    url: '/details/:id',
-    controller: 'detailsController',
-    templateUrl: 'views/product-details.html'
-  }).state('shop', {
-    url: '/shop',
-    controller: 'shopController',
-    templateUrl: 'views/shop.html'
-  });
-
-  $urlRouterProvider.otherwise('/');
-
+   $urlRouterProvider.otherwise('/');
 });

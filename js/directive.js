@@ -3,9 +3,9 @@ angular.module('assessment')
   return {
     restrict: 'AE',
     scope: {
-      ware: '=',
-      getDeets: '&'
+      familiar: '=',
+      getBio: '&'
     },
-    templateUrl: 'views/product-tmpl.html'
+    templateUrl: './views/pet-tmpl.html'
   };
 });
