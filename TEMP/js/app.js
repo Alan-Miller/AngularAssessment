@@ -25,6 +25,11 @@ angular.module('assessment', ['ui.router'])
        url: '/pets',
        templateUrl: './views/pets.html',
        controller: 'petsCtrl'
+     })
+     .state('api', {
+       url: '/api',
+       templateUrl: './views/api.json',
+       controller: 'apiCtrl'
      });
 
    $urlRouterProvider.otherwise('/');
